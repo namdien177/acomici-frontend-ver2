@@ -1,4 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: 'Roboto', sans-serif; }
+@import url('https://fonts.googleapis.com/css?family=Karla&subset=latin-ext');
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+*, *::after, *::before{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+html , body, .container {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.hidden{
+    display: none !important;
+}
+
+.round-left{
+    border-radius: 0.5em 0 0 0.5em;
+}
+
+.round-right{
+    border-radius: 0 0.5em 0.5em 0;
+}
+
+.round{
+    border-radius: 0.5em;
+}
+
+.circle{
+    border-radius: 50%;
+}
