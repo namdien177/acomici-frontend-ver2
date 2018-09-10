@@ -1,0 +1,110 @@
+.friend-section{
+    position: absolute;
+    height: calc(100vh - 4rem);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    transition: width 0.4s;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px;
+    display: inline-block;
+    z-index: 1;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.friend-section:hover{
+    width: 250px;
+}
+
+.friend-section > div{
+    width: 230px !important;
+    overflow: hidden !important;
+}
+
+.friend-section > div.title{
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    line-height: 2rem;
+    z-index: -1;
+}
+
+.friend-section > .a-friend {
+    height: 4rem;
+    display: grid;
+    grid-template-areas: 
+    'cover name'
+    'cover action';
+    grid-gap: 0.5rem;
+    grid-template-columns: 4rem auto;
+    grid-template-rows: 1.75rem;
+    margin: 5px 0;
+}
+
+.friend-section > .a-friend:hover{
+    background: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.a-friend > .img-cover{
+    grid-area: cover;
+    height: 4rem;
+    width: 4rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.a-friend > .img-cover::before{
+    content: '';
+    height: 4rem !important;
+    border: 3px solid rgb(248, 31, 31);
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.a-friend > .online.img-cover::before{
+    content: '';
+    height: 4rem !important;
+    border: 3px solid rgb(36, 190, 36);
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.a-friend > .name{
+    grid-area: name;
+    display: block;
+    text-overflow: ellipsis;
+    height: 1.75rem;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    overflow: hidden;
+    color: white;
+}
+
+.a-friend > .action{
+    grid-area: action;
+    display: block;
+    text-overflow: ellipsis;
+    height: 1.75rem;
+    font-size: 0.7rem;
+    line-height: 1.75rem;
+    overflow: hidden;
+    color: black;
+}
+
+.a-friend > .online.action{
+    color: rgb(36, 190, 36) !important;
+}
+
+.container{
+    padding-right: 30px;
+}

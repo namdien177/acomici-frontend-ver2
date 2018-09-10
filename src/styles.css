@@ -10,15 +10,28 @@
     font-family: 'Karla', sans-serif;
 }
 
-html , body, .container {
+html , body {
     padding: 0;
     margin: 0;
     height: 100%;
 }
 
+.container{
+    width: 100% !important;   
+    position: relative; 
+    margin: 0;
+    padding: 1rem;
+}
+
 a{
     text-decoration: none;
     color: #000;
+    font-size: 1rem;
+    line-height: 1rem;
+    transition: background-color 0.4s;
+    -moz-transition: background-color 0.4s;
+    -o-transition: background-color 0.4s;
+    -webkit-transition: background-color 0.4s;
 }
 
 .hidden{

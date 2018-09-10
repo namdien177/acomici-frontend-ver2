@@ -10,3 +10,45 @@
   position: sticky;
   top: 0;
 }
+
+mat-toolbar-row a{
+  color: white;
+  line-height: 4rem;
+  padding-left: 2.5rem;
+  padding-right: 1rem;
+  position: relative;
+}
+
+mat-toolbar-row mat-icon{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 1.5rem;
+  transform: translate(50%, -50%);
+}
+
+mat-toolbar-row a:hover{
+  background: rgba(0, 0, 0, 0.2);
+}
+
+mat-toolbar-row a:first-child{
+  padding: 1.25rem 1rem 1.25rem 0.5rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+mat-toolbar-row a:first-child:hover{
+  background: rgba(0, 0, 0, 0);
+}
+
+.spacer{
+  flex: 1 1 auto;
+}
+
+form{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1rem;
+  line-height: 1rem;
+  position: relative;
+}
